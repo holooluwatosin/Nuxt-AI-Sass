@@ -73,3 +73,22 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+
+
+
+//Frm: App.vue
+<!-- import { Button } from './components/ui/button'; -->
+
+<template>
+  <div>
+    <!-- <Button variant="destructive"> -->
+    <!-- <Button variant="link2">
+      Hello
+    </Button> -->
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
+</template>

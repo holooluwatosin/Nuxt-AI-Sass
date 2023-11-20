@@ -33,5 +33,5 @@
 
     definePageMeta({
         layout: 'home',
-    })
+    });
 </script>

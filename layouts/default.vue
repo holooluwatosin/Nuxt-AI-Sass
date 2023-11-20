@@ -6,15 +6,13 @@
         </div>
         <main class="md:pl-72 pb-10">
             <!-- Navbar -->
-            <slot/>
+            <slot />
         </main>
     </div>
 </template>
 
 <script setup lang="ts">
-    // definePageMeta({
-    //     layout: 'default',
-    // })
+
 </script>
 
 <style scoped>

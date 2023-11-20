@@ -6,6 +6,7 @@
 
 <script setup lang="ts">
     const user = useSupabaseUser()
+
 </script>
 
 <style scoped>
