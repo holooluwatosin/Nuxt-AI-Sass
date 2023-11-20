@@ -3,10 +3,12 @@ import { Button } from './components/ui/button';
 
 <template>
   <div>
-    <!-- <NuxtWelcome /> -->
     <!-- <Button variant="destructive"> -->
-    <Button variant="link2">
+    <!-- <Button variant="link2">
       Hello
-    </Button>
+    </Button> -->
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

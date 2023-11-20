@@ -1,13 +1,27 @@
 <!-- App.vue -->
 <template>
-    ...
-    <Auth
-        :supabaseClient="supabaseClient"
-        :appearance="{
-        theme: ThemeSupa
-        }"
-    />
-    ...
+    <div class="w-full min-h-screen flex items-center">
+        <div class="max-w-[800px] w-full mx-auto">
+            <Card>
+                <CardTitle>
+                    <div class="text-center py-4">
+                        Welcome
+                    </div>
+                </CardTitle>
+                <CardContent>
+                    <!-- The ':providers' was add to limit the auth/login reference to that, it can be removed though -->
+                    <Auth
+                        :supabaseClient="supabaseClient"
+                        :appearance="{
+                        theme: ThemeSupa
+                        }"
+                        :providers="['github', 'google']"
+                        redirectTo="/"
+                    />
+                </CardContent>
+            </Card>
+        </div>
+    </div>
 </template>
   
 <script setup lang="ts">
@@ -16,4 +30,8 @@
     import { Auth } from '@nuxtbase/auth-ui-vue'
 
     const supabaseClient = useSupabaseClient()
+
+    definePageMeta({
+        layout: 'home',
+    })
 </script>

@@ -23,5 +23,14 @@ export default defineNuxtConfig({
         pathPrefix: false
       })
     }
+  },
+  // This is added from supabase.nuxtjs.org because it keep giving a 404 error upon getting to the landing page.
+  supabase: {
+    // Options
+    redirectOptions: {
+      login: '/auth',
+      callback: '/confirm',
+      exclude: ['/'], //means it will not require authentication to get to the '/' page.
+    }
   }
 })
