@@ -9,7 +9,7 @@
                     </div>
                 </CardTitle>
                 <CardContent>
-                    <!-- The ':providers' was add to limit the auth/login reference to that, it can be removed though -->
+                    <!-- The ':providers' was added to limit the auth/login reference to that, it can be removed though -->
                     <Auth
                         :supabaseClient="supabaseClient"
                         :appearance="{
